@@ -7,9 +7,9 @@ Preferences > PHP > Editor > Templates
 ```php
 echo "<pre>"; $$this->db->last_query(); echo "</pre>";
 ```
-* `print_last_query`
+* `pre_print`
 ```php
-			echo "<pre>";
-			var_dump( ${cursor} );
-			echo "</pre>";
+echo "<pre>";
+print_r( ${cursor} );
+echo "</pre>";
 ```
