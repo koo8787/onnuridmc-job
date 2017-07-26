@@ -16,24 +16,15 @@ Maecenas et turpis nec lorem sagittis mollis. Etiam at ex ligula. Cras malesuada
 </p>
 <p>
 Suspendisse aliquet ante id enim egestas euismod. Cras rutrum nisi eu laoreet pellentesque. Curabitur vulputate, leo at consectetur porta, ante mi lobortis tellus, eu pretium dolor arcu et lorem. Fusce vitae semper lectus, et gravida nisl. Morbi at nibh ut ligula cursus vulputate vitae ut ante. Aliquam vulputate pulvinar magna. Cras eu justo vel libero eleifend sodales. Suspendisse congue magna in est varius volutpat. Etiam consectetur orci ac lobortis tristique. Donec suscipit sapien vel vestibulum varius. Sed dictum sed erat sed malesuada. Aliquam sit amet hendrerit dui, nec luctus est. Integer id dolor blandit, volutpat eros sed, lacinia libero. Donec at posuere tortor.
-</p></div>
+</p>
+</div>
 
-
-<div id="adLayer" style = "visibility:hidden">
+<div class="box" id="adLayer" style = "visibility:visible">
     <iframe name="smartFrame" 
        src="child.html" width="100%" height="100px">
      </iframe>
 </div>
 
-<script>
-var rect = parent.document.getElementById("adLayer").getBoundingClientRect();
 
-window.onscroll = function() {myFunction()};
 
-function myFunction() {
-    console.log( document.body.scrollTop , rect.top );
-    if (document.body.scrollTop > rect.top || document.documentElement.scrollTop > rect.top) {
-        document.getElementById("adLayer").style.visibility = "visible";
-    }
-}
-</script>
+

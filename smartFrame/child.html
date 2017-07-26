@@ -1,2 +1,33 @@
 <!DOCTYPE html>
-<h1>AD</h1>
+<head>
+	<script src="intersection-observer.js"></script>
+</head>
+
+<body>
+	<h3 class="box">AD</h3>
+<script>
+var test = function(entries, observer){
+	entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+            // do something
+            console.log("iframe see");
+        }
+    });
+};
+
+const io = new IntersectionObserver(test);
+    
+io.POLL_INTERVAL = 100;
+
+var list = document.querySelector('.box');
+
+io.observe(list);
+</script>
+		
+</body>
+
+
+
+
+
+
